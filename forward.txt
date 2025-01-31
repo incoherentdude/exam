@@ -1,5 +1,5 @@
 shuhari@debian:~$ cat /etc/bind/db.forward
-; BIND data file for the sarang.pawar zone
+; BIND data file 
 $TTL    604800
 @       IN      SOA     localhost. shuhari.local. (
                       2         ; Serial
