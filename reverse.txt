@@ -1,17 +1,16 @@
-
 shuhari@debian:~$ cat /etc/bind/db.reverse
 ;
 ; BIND reverse data file for local loopback interface
 ;
 $TTL    604800
-@       IN      SOA     localhost. sarang.pawar. (
+@       IN      SOA     localhost. shuhari.local. (
                               1         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 ;
-@       IN      NS      sarang.pawar.
-130     IN      PTR     deb1.sarang.pawar.
-140     IN      PTR     deb2.sarang.pawar.
-150     IN      PTR     deb3.sarang.pawar.
+@       IN      NS      shuhari.local.
+130     IN      PTR     deb1.shuhari.local.
+140     IN      PTR     deb2.shuhari.local.
+150     IN      PTR     deb3.shuhari.local.
