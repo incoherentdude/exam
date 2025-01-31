@@ -1,19 +1,19 @@
 shuhari@debian:~$ cat /etc/bind/db.forward
 ; BIND data file for the sarang.pawar zone
 $TTL    604800
-@       IN      SOA     localhost. sarang.pawar. (
+@       IN      SOA     localhost. shuhari.local. (
                       2         ; Serial
                   604800         ; Refresh
                    86400         ; Retry
                  2419200         ; Expire
                   604800 )       ; Negative Cache TTL
 
-        IN      NS      deb1.sarang.pawar.   ; Define the nameserver
+        IN      NS      deb1.shuhari.local.   ; Define the nameserver
 
 deb1      IN      A       192.168.71.130
 deb2      IN      A       192.168.71.140
 deb3      IN      A       192.168.71.150
 
-rootca    IN      CNAME   deb1.sarang.pawar.
-subca     IN      CNAME   deb2.sarang.pawar.
-www       IN      CNAME   deb3.sarang.pawar.
+rootca    IN      CNAME   deb1.shuhari.local.
+subca     IN      CNAME   deb2.shuhari.local.
+www       IN      CNAME   deb3.shuhari.local.
